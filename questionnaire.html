@@ -2,25 +2,38 @@
 <html>
 	<head>
 		<title>Questionnaire</title>
+		<font face="calibri" color="white">
 	</head>
 	
-<body bgcolor="#181a1b" text="white">
+<body bgcolor="#181a1b" link="#F8F8FF" vlink="#F8F8FF" alink="#F8F8FF">
 
-<p align="center"><img src="logogym.jpg"  width="20%" /></p>
+<form method="get"  action="Index.html" target="_blank">
 
-<p> <font color="#8e2126"><h2 align="center" >Questionnaire de satisfaction</h2></font color></p>
+<header align="center">
+	<a href="Index.html"><img src= "images/logogym.png" width="20%"></a>
+</header>
+
+	<p align="center">
+		<font size="6" color="white">
+			<strong>
+				<a href="Index.html">Accueil</a>&#124;<a href="Tarifs.html">Tarifs</a>&#124;<a href="Inscription.html">Inscription</a>&#124;<a href="Contact.html">Contact</a>&#124;<a href="questionnaire.html">Votre Avis</a>
+			</strong/>
+		</font>
+	</p>
+
+<p> <font color="#8e2126" size="6"><h2 align="center" >Questionnaire de satisfaction</h2></font color></p>
 
 <hr size="5px" color="white" width="30%" />
 <hr	size="5px" color="#8e2126" width="50%" />
 
 
 <div align="center">
-	<u><font color="#8e2126">IDENTIFICATION</font></u>
+	<u><font color="#8e2126"size="5">IDENTIFICATION</font></u>
 	
 	<br /> <br />
 	
-	N°adhérent
-		<input type="number" name="le_num" />
+	N°adhérent :
+		<input type="text" name="num_adherent" pattern="[0-9]+" />
 
 <br />
 <br />
@@ -29,7 +42,7 @@
 
 <p><i>Vous avez... </i> </p>
 
-<p>	 entre 18 et 30ans <input type="radio" name="age" checked="checked" /> </p>                           		
+<p>	 entre 18 et 30ans <input type="radio" name="age"/> </p>                           		
 	
 <p>	 entre 30 et 40ans <input type="radio" name="age" /> </p>
 	
@@ -45,7 +58,7 @@
 
 <p><i>Vous êtes abonné depuis...  </i></p>
 
-<p>	 <2017 <input type="radio" name="abo" checked="checked" /> </p>                          		
+<p>	 <2017 <input type="radio" name="abo" /> </p>                          		
 	
 <p>	 2018 <input type="radio" name="abo" />	</p>
 	
@@ -60,7 +73,7 @@
 
 <p><i>A quelle fréquence allez-vous à la salle ?</i></p>
 
-<p>	 Moins d'1 fois par semaine <input type="radio" name="freq" checked="checked" /> </p>                          		
+<p>	 Moins d'1 fois par semaine <input type="radio" name="freq"/> </p>                          		
 	
 <p>	1 fois <input type="radio" name="freq" />	</p>
 	
@@ -78,7 +91,7 @@
 
 <p><i>Quelle est la durée moyenne de vos séances ?</i></p>
 
-<p>	 Moins de 30 minutes <input type="radio" name="time" checked="checked" /> </p>                          		
+<p>	 Moins de 30 minutes <input type="radio" name="time"/> </p>                          		
 	
 <p>	Entre 30 et 60 minutes <input type="radio" name="time" />	</p>
 	
@@ -92,7 +105,7 @@
 
 <p><i>Quand venez-vous faire du sport ?</i></p>
 
-<p>	 Le midi <input type="radio" name="tim" checked="checked" /> </p>                          		
+<p>	 Le midi <input type="radio" name="tim"/> </p>                          		
 	
 <p>	Le soir <input type="radio" name="tim" />	</p>
 	
@@ -103,7 +116,7 @@
 
 <p><i>Etes-vous satisfait des horaires des cours collectifs ?</i></p>
 
-<p>	 Très satisfait <input type="radio" name="cours" checked="checked" /> </p>                          		
+<p>	 Très satisfait <input type="radio" name="cours"/> </p>                          		
 	
 <p>	Satisfait <input type="radio" name="cours" />	</p>
 	
@@ -119,7 +132,7 @@
 
 <p><i>Trouvez-vous que la difficulté et l’intensité des cours sont adaptées à votre niveau de condition physique ?</i></p>
 
-<p>	 Oui <input type="radio" name="cour" checked="checked" /> </p>                          		
+<p>	 Oui <input type="radio" name="cour"/> </p>                          		
 	
 <p>	Non <input type="radio" name="cour" />	</p>
 	
@@ -132,7 +145,7 @@
 
 <p><i>Comment estimez-vous les points suivants ? propreté des salles/du matériel</i></p>
 
-<p>	 Très satisfaisant <input type="radio" name="cou" checked="checked" /> </p>                          		
+<p>	 Très satisfaisant <input type="radio" name="cou"/> </p>                          		
 	
 <p>	 Satisfaisant <input type="radio" name="cou" />	</p>
 	
@@ -146,7 +159,7 @@
 
 <p><i>Etes-vous satisfait du matériel mis à disposition ?</i></p>
 
-<p>	 Très satisfait <input type="radio" name="co" checked="checked" /> </p>                          		
+<p>	 Très satisfait <input type="radio" name="co" /> </p>                          		
 	
 <p>	 Satisfait <input type="radio" name="co" />	</p>
 	
@@ -160,7 +173,7 @@
 
 <p><i>Comment estimez-vous l’équipe des conseillers sportifs ?</i></p>
 
-<p>	 Très satisfaisant <input type="radio" name="coh" checked="checked" /> </p>                          		
+<p>	 Très satisfaisant <input type="radio" name="coh"/> </p>                          		
 	
 <p>	 Satisfaisant <input type="radio" name="coh" />	</p>
 	
@@ -178,12 +191,39 @@
 
 <br />
 
-<input type="submit" value="Envoyer"> <input type="reset" value="Effacer">
-
-
+<p><input type="submit" value="Envoyer"> <input type="reset" value="Effacer"></p>
 
 </div>
 
+	<hr />	
+	
+	<footer>
+		<p align="center">
+			<img src="images\fblogo1.png" usemap="#fblogo"/>&nbsp;&nbsp;<img src="images\logotwitter1.png" usemap="#twitterlogo"/>&nbsp;&nbsp;<img src="images\instalogo1.png" usemap="#instalogo"/>
+		</p>
+		
+		<map name="fblogo">
+			<area href="https://fr-fr.facebook.com/" coords="1,1,49,49" shape="rect">
+		</map>
+		
+		<map name="twitterlogo">
+			<area href="https://twitter.com/" coords="25,26,24" shape="circle">
+		</map>
+		
+		<map name="instalogo">
+			<area href="https://www.instagram.com/?hl=fr" coords="3,3,10,0,42,0,50,7,49,45,42,49,7,49,0,42,0,8" shape="poly">
+		</map>
+		
+		</br>
+		
+		<p align="center">
+			<strong>
+				&copy; Equipe AFPA
+			</strong>
+		</p>
+	</footer>
+</body>
+</html>
 
 
 	

@@ -15,12 +15,12 @@
 	<p align="center">
 		<font size="6" color="white">
 			<strong>
-				<a href="Index.html">Accueil</a>&#124;<a href="Tarifs.html">Tarifs</a>&#124;<a href="Inscription.html">Inscription</a>&#124;<a href="Contact.html">Contact</a>&#124;<a href="avis.html">Votre Avis</a>
+				<a href="Index.html">Accueil</a>&#124;<a href="Tarifs.html">Tarifs</a>&#124;<a href="Inscription.html">Inscription</a>&#124;<a href="Contact.html">Contact</a>&#124;<a href="questionnaire.html">Votre Avis</a>
 			</strong/>
 		</font>
 	</p>
 
-<p> <font color="#8e2126" size="8"><h2 align="center" >Formulaire d'inscription</h2></font color></p>
+<p> <font color="#8e2126" size="6"><h2 align="center" >Formulaire d'inscription</h2></font color></p>
 
 <hr size="5px" color="white" width="30%" />
 <hr	size="5px" color="#8e2126" width="50%" />
@@ -30,14 +30,15 @@
 
 	<p>
 	
-	Nom
-		<input type="text" name="le_nom" />
-		
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	&nbsp; &nbsp; &nbsp;
 	
+	Nom *
+		<input type="text" name="le_nom" size="25" pattern="[A-Za-z]+"required />
+		
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-	Prénom
-		<input type="text" name="le_prenom" />
+	Prénom *
+		<input type="text" name="le_prenom" size="25" pattern="[A-Za-z]+"required />
 		
 	
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -52,22 +53,20 @@
 	
 	<p>
 	
-		Adresse
-		<input type="text" name="adresse" />
+		Adresse *
+		<input type="text" name="adresse" size="25" required />
 	
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	
-	
-	
-	Ville
-		<input type="text" name="ville" />
+	Ville *
+		<input type="text" name="ville" size="25" pattern="[A-Za-z]+"/>
 		
 	
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	
 	
-	Code postal
-		<input type="number" name="code_postal" />
+	Code postal *
+		<input type="text" name="code_postal" pattern="[0-9]{5}" required size="25"/>
 		
 	</p>
 	
@@ -75,21 +74,24 @@
 	
 	<p>
 	
+	&nbsp; &nbsp; &nbsp;
+	
 	E-mail
-		<input  type="email" id="email" pattern=".+@+.+.com" pattern=".+@+.+.fr" placeholder="your@mail.com" required/>
+		<input  type="email" id="email" pattern=".+@+.+.com" pattern=".+@+.+.fr" placeholder="your@mail.com" spellcheck size="25" />
 		
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-	Portable
-		<input type="number" name="tel" />
+	
+	Portable *
+		<input <input type="tel" name="portable" pattern="[0-9]{10}" required size="25"/>
 	
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	
 	Telephone
-		<input type="number" name="fixe" />
+		<input <input type="tel" id="fixe" name="phone" pattern="[0-9]{10}" size="25"/>
 
 	</p>
-<br />
-	
+
+	<br />
 	
 	<p>
 	<input type="radio" name="sexe" value="homme" checked="checked" />Vous êtes un homme <img src="images/masculin1.jpg" width="30" height="30"/>
@@ -109,20 +111,23 @@
 	<p>
 	
 	Nom
-		<input type="text" name="nom2" /> 
+		<input type="text" name="nom2" pattern="[A-Za-z]+"/> 
 	 
-	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	 
 	Prenom
-		<input type="text" name="prenom2" />
+		<input type="text" name="prenom2" pattern="[A-Za-z]+"/>
 		
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	
-	Tel
-		<input type="tel" name="tel2" />
-	
-	
-	
+	Portable
+		<input input type="tel" name="portable1" pattern="[0-9]{10}"/>
+		
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		
+	Telephone
+		<input <input type="tel" name="fixe1" pattern="[0-9]{10}"/>
+		
 </fieldset>
 	
 	
@@ -130,10 +135,9 @@
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-	<input type="radio" name="ouinon" value="oui" />Oui
+	<input type="radio" name="ouinon" value="oui" checked/>Oui
 	
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-	
+	&nbsp; &nbsp;
 	<input type="radio" name="ouinon" value="non" />Non
 </p>
 
@@ -149,17 +153,10 @@
 
 <br />
 
-<p>Fait à _________</p>
-<p>le ___/___/_____</p>
+<p>Fait à <input type="text" name="villeinscription" size="20" pattern="[A-Za-z]+"></p>
+<p>le <input type="date" name="dateinscription" max="2020-02-06" required></p>
 
 <br />
-
-Signature de l'adhérent :  
-
-<table border="1" width="200" height="120" bgcolor="white">
-	<tr>
-	</tr>
-</table>	
 
 	<p>
 		<input type="submit" value="Valider" />
@@ -192,7 +189,6 @@ Signature de l'adhérent :
 				&copy; Equipe AFPA
 			</strong>
 		</p>
-
 </form>
 </body>
 </html>
