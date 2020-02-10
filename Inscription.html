@@ -51,7 +51,7 @@
 </br>
 	
 	<p>
-		<label for="adresse">Adresse *</label>&emsp;<input type="text" name="adresse" size="25" required />&emsp;<label for="ville">Ville *</label>&emsp;<input type="text" name="ville" size="25" pattern="[A-Za-z]+"/>&emsp;<label for="code_postal">Code Postal *</label>&emsp;<input type="text" name="code_postal" pattern="[0-9]{5}" required size="25"/>
+		<label for="adresse">Adresse *</label>&emsp;<input type="text" name="adresse" size="25" required />&emsp;<label for="ville">Ville *</label>&emsp;<input type="text" name="ville" size="25" pattern="[A-Za-z]+"/>&emsp;<label for="code_postal">Code Postal *</label>&emsp;<input type="text" name="code_postal" pattern="[0-9]{5}" placeholder="Code postal à 5 chiffres" required size="25"/>
 	</p>
 	
 </br>
@@ -110,7 +110,10 @@
 		<li>un justificatif de scolarité pour bénéficier du tarif étudiant</li>
 	</ul>
 
-</br>
+	<label for="piecesjustificatives">Inserer vos fichiers au format PDF ou JPEG:</label></br></br>
+	<input type="file" id="piecesjustificatives" name="piecesjustificatives" accept="image/pdf, image/jpeg">
+
+<br /><br /><br />
 
 	<p>
 		Fait à <input type="text" name="villeinscription" size="20" pattern="[A-Za-z]+">
